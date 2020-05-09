@@ -7,7 +7,6 @@
   "scripts": {
     "start": "tsc && node ./dist/index.js",
     "build": "tsc",
-    "test": "karma start karma.conf.js",
     "pre-publish": "node prepublish.js",
     "publish:lib": "npm run build && npm run pre-publish && npm publish dist/ --access=public"
   },
@@ -22,17 +21,8 @@
   },
   "homepage": "https://github.com/Binarysearch/REPOSITORY_NAME#readme",
   "devDependencies": {
-    "@types/jasmine": "~3.3.8",
-    "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
-    "jasmine-core": "~3.4.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.1.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-jasmine": "~2.0.1",
-    "karma-typescript": "^5.0.2",
-    "ts-loader": "^7.0.0",
-    "tslint": "~5.15.0"
+    "ts-loader": "^7.0.0"
   },
   "dependencies": {
     "@types/node": "^13.13.5",
